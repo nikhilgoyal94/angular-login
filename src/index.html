@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="appCtrl">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="vendors/angular-1.5.8.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap-3.3.7.css">
+    <link rel="stylesheet" href="directives/login/login.css">
+
+    <script src="directives/login/login.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+
+    <title>Login Reusable</title>
+</head>
+<body>
+    <login userid="userId" userpassword="userPassword" onlogin="doLogin" validator="doValidate" comments="false"
+           nullchecks="true" maxattempt="4" iderrormessages="idErrorMessage" passworderrormessages="passwordErrorMessage"
+           showorhidepassword="true"></login>
+</body>
+</html>
